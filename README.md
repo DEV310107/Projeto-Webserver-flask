@@ -65,8 +65,6 @@ python -m venv venv
 **Windows (PowerShell):**
 
 ```bash
-bash
-CopiarEditar
 .\venv\Scripts\Activate.ps1
 
 ```
@@ -74,8 +72,6 @@ CopiarEditar
 **Se der erro, execute:**
 
 ```bash
-bash
-CopiarEditar
 Set-ExecutionPolicy RemoteSigned
 
 ```
@@ -85,8 +81,6 @@ Set-ExecutionPolicy RemoteSigned
 Após ativar o venv:
 
 ```bash
-bash
-CopiarEditar
 pip install flask
 
 ```
@@ -94,8 +88,6 @@ pip install flask
 ### 🚀 Executando um script Python
 
 ```bash
-bash
-CopiarEditar
 python nome_do_arquivo.py
 
 ```
