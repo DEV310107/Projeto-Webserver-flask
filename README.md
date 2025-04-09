@@ -1,74 +1,110 @@
-✅ Sistema Web de Lista de Tarefas (TODO)
-🎯 Objetivo
-Desenvolver um sistema web simples de gerenciamento de tarefas utilizando Flask, com armazenamento em CSV e interface em HTML + TailwindCSS.
+# ✅ Sistema Web de Lista de Tarefas (TODO)
 
-📋 Requisitos Funcionais
+## 🎯 Objetivo
+
+Desenvolver um sistema web simples de gerenciamento de tarefas utilizando **Flask**, com armazenamento em **CSV** e interface em **HTML + TailwindCSS**.
+
+---
+
+## 📋 Requisitos Funcionais
+
 O sistema deve permitir:
 
-✅ Adicionar tarefas (título e descrição)
+- ✅ **Adicionar tarefas** (título e descrição)
+- ✅ **Remover tarefas** individualmente
+- ✅ **Editar tarefas** existentes
+- ✅ **Listar todas as tarefas**
 
-✅ Remover tarefas individualmente
+### ➕ Funcionalidades Extras (Pontos adicionais):
 
-✅ Editar tarefas existentes
+- **Upload de Imagens**: Associar uma imagem à tarefa (salvar em uma pasta, armazenar o caminho no CSV).
+- **Migração para MySQL**: Criar uma versão com persistência em banco de dados MySQL.
 
-✅ Listar todas as tarefas
+---
 
-➕ Funcionalidades Extras (Pontos adicionais):
-Upload de Imagens: Associar uma imagem à tarefa (salvar em uma pasta, armazenar o caminho no CSV).
+## ⚙️ Requisitos Técnicos
 
-Migração para MySQL: Criar uma versão com persistência em banco de dados MySQL.
+- Backend com **Flask**
+- Armazenamento das tarefas em **arquivo CSV**
+- Interface web com **HTML** e **TailwindCSS**
+- Extras: Upload de imagem e versão com **MySQL**
 
-⚙️ Requisitos Técnicos
-Backend com Flask
+---
 
-Armazenamento das tarefas em arquivo CSV
+## 🧾 Documentação
 
-Interface web com HTML e TailwindCSS
+### Introdução
 
-Extras: Upload de imagem e versão com MySQL
+Este projeto tem como objetivo desenvolver um sistema de gerenciamento de tarefas (TODO) utilizando o framework **Flask**, com dados armazenados em **CSV** e interface moderna com **HTML + TailwindCSS**.
 
-🧾 Documentação
-Introdução
-Este projeto tem como objetivo desenvolver um sistema de gerenciamento de tarefas (TODO) utilizando o framework Flask, com dados armazenados em CSV e interface moderna com HTML + TailwindCSS.
+---
 
-🔄 Divisão de Tarefas
+### 🔄 Divisão de Tarefas
+
 Organizamos o grupo para focar em cada parte do sistema de forma produtiva, otimizando o tempo e garantindo melhor desempenho nas entregas.
 
-🛠️ Preparando o Ambiente
-O que é um ambiente virtual (venv)?
-Um ambiente virtual permite isolar as dependências de cada projeto em Python, evitando conflitos entre bibliotecas.
+---
 
-✅ Criando o venv
+## 🛠️ Preparando o Ambiente
+
+### O que é um ambiente virtual (venv)?
+
+Um **ambiente virtual** permite isolar as dependências de cada projeto em Python, evitando conflitos entre bibliotecas.
+
+### ✅ Criando o venv
+
+```bash
 bash
-Copiar
-Editar
+CopiarEditar
 python -m venv venv
-▶️ Ativando o venv
-Windows (PowerShell):
 
+```
+
+### ▶️ Ativando o venv
+
+**Windows (PowerShell):**
+
+```bash
 bash
-Copiar
-Editar
+CopiarEditar
 .\venv\Scripts\Activate.ps1
-Se der erro, execute:
 
+```
+
+**Se der erro, execute:**
+
+```bash
 bash
-Copiar
-Editar
+CopiarEditar
 Set-ExecutionPolicy RemoteSigned
-📦 Instalando o Flask
+
+```
+
+### 📦 Instalando o Flask
+
 Após ativar o venv:
 
+```bash
 bash
-Copiar
-Editar
+CopiarEditar
 pip install flask
-🚀 Executando um script Python
-bash
-Copiar
-Editar
-python nome_do_arquivo.py
-Importante: Sempre ative o ambiente virtual antes de rodar os arquivos.
 
-📌 Conclusão
-Ambientes virtuais são essenciais para manter a organização dos projetos Python. Com isso feito, podemos iniciar a codificação do sistema TODO.
+```
+
+### 🚀 Executando um script Python
+
+```bash
+bash
+CopiarEditar
+python nome_do_arquivo.py
+
+```
+
+> Importante: Sempre ative o ambiente virtual antes de rodar os arquivos.
+> 
+
+---
+
+## 📌 Conclusão
+
+Ambientes virtuais são essenciais para manter a organização dos projetos Python. Com isso feito, podemos iniciar a **codificação do sistema TODO**.
