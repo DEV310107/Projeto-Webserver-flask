@@ -1,0 +1,71 @@
+{% extends "index.html" %}
+
+{% block link %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styleDelProduto.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="delete-produtos-container">
+        <div class="header-section">
+            <h1>Excluir Tarefas</h1>
+            <button type="button" id="deleteSelectedBtn" class="delete-button" disabled>Excluir Selecionados</button>
+        </div>
+        
+        <form id="deleteForm" action="{{ url_for('excluir_produtos') }}" method="POST">
+            <div class="products-grid">
+                {% if produtos %}
+                    {% for id, produto in produtos.items() %}
+                        <div class="product-card">
+                            <div class="selection-checkbox">
+                                <input type="checkbox" name="produtos_ids" value="{{ id }}" id="product-{{ id }}" class="product-checkbox">
+                                <label for="product-{{ id }}"></label>
+                            </div>
+                            <div class="product-image">
+                                {% if produto.imagem %}
+                                    <img src="{{ url_for('static', filename=produto.imagem) }}" alt="{{ produto.nome }}">
+                                {% else %}
+                                    <div class="no-image">Sem imagem</div>
+                                {% endif %}
+                            </div>
+                            <div class="product-info">
+                                <h3>{{ produto.nome }}</h3>
+                                <p class="product-description">{{ produto.descricao }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="no-products">
+                        <p>Nenhuma tarefa cadastrada para excluir.</p>
+                    </div>
+                {% endif %}
+            </div>
+            
+            <!-- Modal de confirmação -->
+            <div id="confirmModal" class="modal">
+                <div class="modal-content">
+                    <h2>Confirmar Exclusão</h2>
+                    <p>Tem certeza que deseja excluir as tarefas selecionadas?</p>
+                    <div class="modal-buttons">
+                        <button type="button" id="cancelDelete">Cancelar</button>
+                        <button type="submit" id="confirmDelete">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    
+    <script src="{{ url_for('static', filename='js/scriptDelProduto.js') }}"></script>
+
+{% endblock %}
