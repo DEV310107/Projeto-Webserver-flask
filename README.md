@@ -94,7 +94,3 @@ python nome_do_arquivo.py
 > 
 
 ---
-
-## 📌 Conclusão
-
-Ambientes virtuais são essenciais para manter a organização dos projetos Python. Com isso feito, podemos iniciar a **codificação do sistema TODO**.
