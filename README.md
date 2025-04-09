@@ -54,8 +54,6 @@ Um **ambiente virtual** permite isolar as dependências de cada projeto em Pytho
 ### ✅ Criando o venv
 
 ```bash
-bash
-CopiarEditar
 python -m venv venv
 
 ```
