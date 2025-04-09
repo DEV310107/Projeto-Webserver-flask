@@ -1,114 +1,74 @@
-# Projeto: Sistema Web de Lista de Tarefas (TODO)
+✅ Sistema Web de Lista de Tarefas (TODO)
+🎯 Objetivo
+Desenvolver um sistema web simples de gerenciamento de tarefas utilizando Flask, com armazenamento em CSV e interface em HTML + TailwindCSS.
 
-- INSTRUÇÕES
-    
-    *Objetivo*
-    
-    Desenvolver um sistema web de lista de tarefas (TODO) utilizando Flask. O sistema deverá armazenar os dados em um arquivo CSV e fornecer uma interface simples para gerenciamento das tarefas.
-    
-    ### *Requisitos Funcionais*
-    
-    O sistema deverá permitir :
-    
-    ✅ *Adicionar tarefas* – O usuário poderá criar novas tarefas com um título e descrição.
-    
-    ✅ *Remover tarefas* – O usuário poderá excluir tarefas individualmente.
-    
-    ✅ *Editar tarefas* – O usuário poderá modificar o título e a descrição de uma tarefa existente.
-    
-    ✅ *Listar tarefas* – Exibir todas as tarefas cadastradas.
-    
-    ### *Requisitos Técnicos*
-    
-    - O backend deve ser desenvolvido em *Flask*.
-    - O banco de dados será um *arquivo CSV*, armazenando ID, título e descrição da tarefa.
-    - A interface pode ser desenvolvida com *HTML + TAILWIND*
-    
-    ---
-    
-    ### *Extras para Pontos Adicionais (+)*
-    
-    ➕ *Incluir imagens*: O sistema deve permitir que o usuário faça o upload de uma imagem associada a cada tarefa. As imagens podem ser armazenadas em uma pasta separada no servidor, e o caminho salvo no CSV.
-    
-    ➕ *Migração para MySQL*: Criar uma versão alternativa do projeto utilizando um banco de dados MySQL ao invés do arquivo CSV, garantindo persistência mais robusta e escalável.
-    
-    ---
-    
-    *Entrega:* O projeto deverá ser entregue como um repositório Git contendo o código-fonte e um README com instruções de instalação e uso.
-    
+📋 Requisitos Funcionais
+O sistema deve permitir:
 
-## DOCUMENTAÇÃO
+✅ Adicionar tarefas (título e descrição)
 
-### Introdução:
+✅ Remover tarefas individualmente
 
-O objetivo deste projeto é criar um sistema de lista de tarefas (TODO) simples e funcional utilizando o framework *Flask. O sistema permitirá ao usuário gerenciar suas tarefas através de uma interface web, incluindo funcionalidades de adicionar, editar, remover e listar tarefas. As tarefas serão armazenadas em um arquivo **CSV, e a interface será desenvolvida com **HTML* e *Tailwind CSS*.
+✅ Editar tarefas existentes
 
-### Pratica:
+✅ Listar todas as tarefas
 
-Com as instruções e objetivos traçados iniciamos a divisão de tarefa no grupo, para um aproveitamento melhor de nosso tempo e ter um desempenho mais focado em cada termo técnico.
+➕ Funcionalidades Extras (Pontos adicionais):
+Upload de Imagens: Associar uma imagem à tarefa (salvar em uma pasta, armazenar o caminho no CSV).
 
-### *Requisitos Técnicos*
+Migração para MySQL: Criar uma versão com persistência em banco de dados MySQL.
 
-- O backend deve ser desenvolvido em *Flask*.
-- O banco de dados será um *arquivo CSV*, armazenando ID, título e descrição da tarefa.
-- A interface pode ser desenvolvida com *HTML + TAILWIND*
+⚙️ Requisitos Técnicos
+Backend com Flask
 
-**Incluir imagens*
+Armazenamento das tarefas em arquivo CSV
 
-Backend em Flask
+Interface web com HTML e TailwindCSS
 
-Para começar a programar em Flask temos que preparar o ambiente virtual “venv”, para isso vamos entender oque é primeiramente!
+Extras: Upload de imagem e versão com MySQL
 
-*O que é um ambiente virtual (venv)?*
+🧾 Documentação
+Introdução
+Este projeto tem como objetivo desenvolver um sistema de gerenciamento de tarefas (TODO) utilizando o framework Flask, com dados armazenados em CSV e interface moderna com HTML + TailwindCSS.
 
-Um ambiente virtual (venv) é um ambiente isolado que permite instalar pacotes Python sem afetar a instalação global do sistema. Isso é útil para manter dependências organizadas e evitar conflitos entre projetos.
+🔄 Divisão de Tarefas
+Organizamos o grupo para focar em cada parte do sistema de forma produtiva, otimizando o tempo e garantindo melhor desempenho nas entregas.
 
-*Criando um ambiente virtual*
+🛠️ Preparando o Ambiente
+O que é um ambiente virtual (venv)?
+Um ambiente virtual permite isolar as dependências de cada projeto em Python, evitando conflitos entre bibliotecas.
 
-Para criar um ambiente virtual em Python, use o seguinte comando:
-
-
+✅ Criando o venv
+bash
+Copiar
+Editar
 python -m venv venv
+▶️ Ativando o venv
+Windows (PowerShell):
 
-
-Isso criará uma pasta chamada venv com todos os arquivos necessários.
-
-*▶️ Ativando o ambiente virtual*
-
-*🖥 Windows (PowerShell):*
-
-
+bash
+Copiar
+Editar
 .\venv\Scripts\Activate.ps1
+Se der erro, execute:
 
-
-Se ocorrer um erro, talvez seja necessário modificar a permissão de execução de scripts:
-
-
+bash
+Copiar
+Editar
 Set-ExecutionPolicy RemoteSigned
+📦 Instalando o Flask
+Após ativar o venv:
 
-
-*📦 Instalando pacotes dentro do venv*
-
-Após ativar o ambiente virtual, você pode instalar pacotes normalmente com pip:
-
-
+bash
+Copiar
+Editar
 pip install flask
-
-
-*🚀 Executando um script Python*
-
-Se quiser rodar um arquivo Python dentro do ambiente virtual:
-
-
+🚀 Executando um script Python
+bash
+Copiar
+Editar
 python nome_do_arquivo.py
+Importante: Sempre ative o ambiente virtual antes de rodar os arquivos.
 
-
-Se rodar esse comando sem ativar o venv, o script será executado com a versão global do Python, podendo gerar erros caso os pacotes necessários não estejam instalados.
-
-*📌 Conclusão*
-
-Ambientes virtuais são essenciais para organizar dependências em projetos Python. Criar, ativar e instalar pacotes no venv é simples e evita problemas de compatibilidade entre projetos diferentes.
-
-### CÓDIGO:
-
-Depois de entender como configurar o ambiente virtual do “venv”, vamos para a codificação
+📌 Conclusão
+Ambientes virtuais são essenciais para manter a organização dos projetos Python. Com isso feito, podemos iniciar a codificação do sistema TODO.
